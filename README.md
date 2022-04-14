@@ -1,2 +1,2 @@
 # sql
-SQL + Postgres + MySQL + Python
+SQL + Postgres + MySQL + NoSQL + Python
