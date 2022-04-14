@@ -14,32 +14,32 @@ Sources: Socratica (YouTube), others
  - The collection of tables in a database is called a *schema*.
  - A *primary key* is a value that uniquely identifies each record in a specific table.
 
-## Commercial
+# Commercial
  * Paid software or service.
  * Includes: Oracle, IBM, and Microsoft  
      
-## Open-Source
+# Open-Source
  * Manage by a community, 
  * Publicly available, and is 
  * Open for public use, with varying terms and conditions.
  * Licenses differs, but is usually permissive.
  * Example includes: MySQL/i, MariaDB (MySQLi), PostgreSQL, SQLite 
  
-## X/LAMPP
+# X/LAMPP
  * X-CrossPlatform/L-inux, A-pache, M-ySQL, P-HP, P-Perl
  * Offers MySQL, now MariaDB, as DBMS.
  * Can be installed locally or configured in a server or vitual machine.
  
-## Data and Simultaneous Access
+# Data and Simultaneous Access
  * Small Data/Limited Users: Locally-stored Database for control and fixed costs. 
  * Large Data/Simultaneous Access: Cloud Computing. 
  
-## Local and Open-source 
+# Local and Open-source 
  * Customizable, but requirements are limited to hardware and software availability.
  * May cost less in money in short-term.
  * Cost more in time (latency) 
  
-## Cloud Services
+# Cloud Services
  * Marketed as **X as a Service** (`XaaS`).
  * Allows both proprietary and open-source databases.
  * Higher requirements normally mean higher costs.
@@ -54,18 +54,18 @@ Sources: Socratica (YouTube), others
      - Cost less in time (global access, speed)
  * Choice for companies with a sizeable budget.
  
-## Migration 
+# Migration 
  * Migration of local, open-source databases to a cloud service is straightforward
  * There are tools available to streamline the migration process.
  
-## MySQL/i vs MariaDB vs PostgreSQL 
+# MySQL/i vs MariaDB vs PostgreSQL 
  * Difference: Not much on core features 
  * Ownership: MySQL/i is owned by Oracle (through Sun Microsystems) and development is mostly inactive.
  * Open-source DBMSs are actively improved by its community of developers and users.
  * Some performace claims.
  * Other unique features.
  
-## Transferable Skills 
+# Transferable Skills 
  > While experience is mostly required, database management skills are mostly transferrable.
  1. SQL 
  2. Schema Design 
