@@ -14,9 +14,10 @@ PART 4: Python
 ```python 
 import psycopg2 
 from arkivist import Arkivist
- 
-json = Arkivist("password.json", encrypted=True)
-json.authenticate(fail=True)
+
+
+credentials = "arkivist-key.txt"
+json = Arkivist("password.json", encrypted=True, credentials=credentials)
 password = json.get("password")
  
 database = psycopg.connect(f"dbname=temp user=postgres password={password}") 

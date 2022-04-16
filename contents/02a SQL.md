@@ -47,17 +47,13 @@ PART 2: SQL Basics
  * Different DMBS may differ in the set of other native data types.
  * Users may create custom data types.
  * Refer to the appropriate documentation for naming convention.
- * Data Types and aliases:
-     - bit(n) {0, 1}*
-     - smallint, int2
-     - int, int4, integer
+ * Data Types, equivalents, and aliases:
+     - int
      - decimal, numeric
      - real, float4
      - float8
-     - char(n) 0-8000
-     - varchar(n) 0-8000
-     - time
-     - timestamp
+     - varchar
+     - timestamptz
 
 # Manipulating the Database
 1. Initially create a database:
