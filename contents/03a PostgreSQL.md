@@ -76,7 +76,7 @@ PART 2: PostgreSQL
  - Use *identity* columns and never `SERIAL PRIMARY KEY`.
  - Use `varchar` over `text`, `varchar(n)`, `char(n)`, and `char`.
  - Use `numeric` over `float` or `money` for values that involves a lot of arithmetic operations.
- - Use `timestamptz` over `timestamp` and `timetz`, but never `timestamp(0)` and `timestamptz(0)`.
+ - Use `timestamptz` or ~`timestamp with time zone` over `timestamp` and `timetz`, but never `timestamp(0)` and `timestamptz(0)`.
  - Use `CURRENT_TIMESTAMP` or `now()` for `timestamptz`.
  - Use `LOCALTIMESTAMP` for `timestamp`.
  - Use `CURRENT_DATE` for `date`.

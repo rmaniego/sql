@@ -8,6 +8,7 @@ PART 4: Python
     4. Create a Python application file. 
 
 # Psycopg2
+ * [Basic Usage](https://www.psycopg.org/docs/usage.html)
  * Is a PostgreSQL database adapter for Python.
 
 ## Python + PostgresSQL 
@@ -20,7 +21,7 @@ credentials = "arkivist-key.txt"
 json = Arkivist("password.json", encrypted=True, credentials=credentials)
 password = json.get("password")
  
-database = psycopg.connect(f"dbname=temp user=postgres password={password}") 
+database = psycopg2.connect(f"dbname=temp user=postgres password={password}") 
 cursor = database.cursor() 
  
 query = "SELECT * FROM tbl LIMIT 1" 

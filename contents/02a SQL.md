@@ -138,7 +138,8 @@ WHERE condition
         ```INSERT INTO tbl (tbl_id, column, col2, col3, col4)
             VALUES
                 { (DEFAULT, 'a', 'b', 'c', 'd'), }
-                (DEFAULT, 'a', 'b', 'c', 'd');```
+                (DEFAULT, 'a', 'b', 'c', 'd')
+            { RETURNING * };```
 **Notes:** Multi-row command allows faster batch inserts.
 
 # Update Table Data
