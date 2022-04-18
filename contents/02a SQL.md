@@ -146,9 +146,9 @@ WHERE condition
 # Format
 ```sql
 UPDATE tbl
-{ SET column=123456, }
-{ SET column=2*column, }
-SET col2='value'
+SET {column=123456, }
+    {column=2*column, }
+    col2='value'
 WHERE condition { AND | OR condition2 } { or column IN (val1, val2, ...) };
 ```
 
