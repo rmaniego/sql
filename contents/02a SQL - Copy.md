@@ -55,7 +55,7 @@ PART 2: SQL Basics
      * ALTER - Modify database object, or alter the number of columns of a table.
      * TRUNCATE - Delete all rows (table data only) and free up space, but not the structure.
      * RENAME - Change the name of a table.
-     * DROP - Entirely removes an object, or a table, including its structure and the data inside it, from the database.
+     * DROP - Delete database object, or a table including its structure and the data inside it.
 4. Transaction Control Language (TCL)
  - Directly impacts the `DML` commands:
     * COMMIT - Confirms the DML transaction as permanent.
@@ -111,9 +111,9 @@ PART 2: SQL Basics
  - Execute command: ```ALTER TABLE tbl RENAME column TO name;```
 8. Clear all data from an existing table:
  - Execute command: ```TRUNCATE TABLE tbl;```
-9. Delete an existing table,w ith or without a `WHERE` clause:
+9. Delete an existing table:
  - Execute command: ```DROP TABLE tbl;```
-10. Entirely remove the database:
+10. Delete the database:
  - Execute command: ```DROP DATABASE db_name;```
 
 # Notes
@@ -133,10 +133,6 @@ PART 2: SQL Basics
     - OR: Will become true if at least one condition is true, all conditions must be satisfied.
     - NOT: Inverts the logical value of the (set of) conditions it is referring to, at least one condition is satisfied.
  2. Arithmetic operators - Processes the data arithmetically.
-```sql
-    # Select all records where the ID is even.
-    SELECT * FROM tbl WHERE id % 2 = 0;
-```
  3. Comparison operators - Evaluates or derives a logical (True or False) output depending on the values being compared.
 ```sql
     SELECT * FROM tbl WHERE column>=value;
@@ -246,16 +242,8 @@ DELETE FROM tbl
 WHERE condition { AND|OR condition2 };
 ```
 
-# Triggers
- > Are procedures that are fired when an event occurs, such as an invalid entry.
- 1. DDL Triggers used in `CREATE`, `ALTER`, and `DROP` commands.
- 2. DML Triggers used in `INSERT`, `UPDATE`, and `DELETE` commands.
-
-**Before Triggers**
- - Prevent deletion of data.
-
-**After Triggers**
- - Show a message after an invalid data.
+# Joins
+ - Allows selection of multiple data from across different tables.
 
 # Views
  - A virtual table created by a query, that collects matching data from multiple tables.
@@ -288,29 +276,9 @@ CREATE INDEX { tbl_{column_}col2_idx }
 ON tbl ({ column, } col2)
 ```
 
-# Joins
- > Allows selection of multiple data from across different tables.
- 1. INNER JOIN: Shows matching data from multiple tables.
- 2. LEFT JOIN: Displays all data from the left table and the matching data from the right table.
- 3. RIGHT JOIN: Displays all data from the right table and the matching data from the left table.
- 4. FULL OUTER JOIN: Displays all the matching and non-matching data.
-
-** Others Notes**
- - Equi Join: Uses the equal `=` sign to derive data having the same value.
- - Non-Equi Join: Uses the not-equal `!=` sign to derive the data not having the same value.
- - Natural Join: Combines columns in two tables having the same column names and data types.
- - Cross Joins: Helps retrieve all possible combinations of the tables.
- - Self-joins: Relates data in the same (singular) table.
-
-# Union
- - Union: Derives all distinct records
- - Union All: Derives all records.
-
 # Transactions 
- > Allows undoing the series of previous commands if one command fails.
-
-# SQL Injection
- > Malicious inputs that can manipulate the database, not-intended for the specific transactions.
+ - Allows undoing the series of previous commands if one command fails. 
+ 
 
 *References* 
 * https://www.sqlshack.com/an-overview-of-sql-server-data-types/
